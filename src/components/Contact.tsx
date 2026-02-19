@@ -31,23 +31,23 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { 
-      icon: Linkedin, 
-      href: "https://linkedin.com", 
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com",
       label: "Connect on LinkedIn",
       glowColor: "hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]",
       iconColor: "group-hover:text-[#0077b5]"
     },
-    { 
-      icon: Github, 
-      href: "https://github.com", 
+    {
+      icon: Github,
+      href: "https://github.com",
       label: "View my GitHub",
       glowColor: "hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]",
       iconColor: "group-hover:text-white"
     },
-    { 
-      icon: Mail, 
-      href: "mailto:your.email@example.com", 
+    {
+      icon: Mail,
+      href: "kotavenkat2004@gmail.com ",
       label: "Send me an email",
       glowColor: "hover:shadow-[0_0_25px_rgba(251,146,60,0.6)]",
       iconColor: "group-hover:text-primary"
@@ -75,7 +75,7 @@ const Contact = () => {
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon;
                   return (
-                    <a 
+                    <a
                       key={index}
                       href={info.href}
                       className="flex items-center gap-4 p-4 rounded-lg hover:bg-primary/10 transition-all duration-300 group"
@@ -156,8 +156,8 @@ const Contact = () => {
                 />
               </div>
 
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground glow-button hover:scale-105 transition-all duration-300"
               >
                 <Send className="w-4 h-4 mr-2" />

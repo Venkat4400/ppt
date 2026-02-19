@@ -9,24 +9,51 @@ import flappyBirdImg from "@/assets/images/flappy-bird-project.png";
 import candyCrushImg from "@/assets/images/candy-crush-project.png";
 import ticTacToeImg from "@/assets/images/tictactoe-project.png";
 import calculatorImg from "@/assets/images/calculator-project.png";
+import FARMERImg from "@/assets/images/FARMERCrop.png";
+import BlooddonImg from "@/assets/images/BlooDDonation.png";
+import SkinCancerImg from "@/assets/images/Skin.png";
 
 const Projects = () => {
   const projects = [
     {
       title: "SkillBridge Platform",
-      description: "A comprehensive volunteer and opportunity platform connecting skilled professionals with meaningful projects and organizations.",
+      description: "Skill Bridge is a full-stack web application built using the React.js framework Typescript and node.js SQL. It connects volunteers with NGOs for opportunities. The platform supports user authentication, opportunity management, application tracking, Resume Scanner, Mock Interview to improve confidence and skills and Study plane voice Based.",
       image: skillBridgeImg,
-      tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/Venkat4400/skillbridge-react",
-      demo: "https://venkat4400.github.io/skillbridge-react/"
+      tech: ["Node.js", "SQL", "Express", "React.js", "TypeScript", "HTML5", "CSS3", "Authentication & Authorization", "API Integration"],
+      github: "https://github.com/Venkat4400/skillbridge-app",
+      demo: "https://skillbridge-app-two.vercel.app/"
+    },
+    {
+      title: "Farmer Crop Prediction is an AI-powered agriculture App",
+      description: "Farmer Crop Prediction is an AI-powered agriculture platform that helps farmers predict crop yield, analyze soil and weather data, and receive smart crop and fertilizer recommendations. It supports better decisions through data-driven farming insights .Based on proves year data and ML",
+      image: FARMERImg,
+      tech: ["React", "Node.js", "SQL", "Express", "Typescript", "python", "DATA sets", "WeAther API's", "ML"],
+      github: "https://github.com/Venkat4400/Farm-crop-yield-prediction-",
+      demo: "https://farmercropprediction.vercel.app/"
+    },
+    {
+      title: "Blood Donation App",
+      description: "Blood Donate App Real-time Blood Donation Platform A clean, modern full-stack web app that instantly connects blood donors with recipients across India. Built with latest technologies to solve critical blood shortage problems with speed and simplicity. Tech StackReact • TypeScript • Vite • Tailwind CSS • shadcn/ui • Supabase (Auth + PostgreSQL + Realtime)Key Features",
+      image: BlooddonImg,
+      tech: ["React", "Node.js", "Tailwind CSS ", "Google Maps API", "Authentication & Authorization", "Supabase"],
+      github: "https://github.com/Venkat4400/Blood-Donate-App-clean",
+      demo: "https://venkat4400.github.io/Online-Food-Ordering-App/"
     },
     {
       title: "Online Food Ordering App",
-      description: "Full-stack food delivery application with real-time order tracking, menu management, and secure payment integration.",
+      description: "Full-stack food delivery application with real-time order tracking, menu management, and secure Authentication & Authorization integration  Dynamic Routing MANU  CART functionality.",
       image: foodOrderingImg,
-      tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/Venkat4400/Online-Food-Ordering-App",
-      demo: "https://venkat4400.github.io/Online-Food-Ordering-App/"
+      tech: ["React", "Node.js", "sql", "Tailwind CSS", "Authentication & AuthorizationExpress"],
+      github: "https://github.com/Venkat4400/food-ordering-app-2.0",
+      demo: "https://food-ordering-app-20.vercel.app/"
+    },
+    {
+      title: "Skin-cancer-Detection using ML",
+      description: "AI Dermatology Screening & Risk Assessment Deep Learning Powered Skin Lesion Analyzer An intelligent web-based AI tool for early skin cancer screening and dermatology risk evaluation. Built with Flask backend and EfficientNetV2 model, trained on the HAM10000 dataset (10,000+ clinical images). Delivers high-accuracy lesion classification with calibrated confidence scores and a clear 6-stage risk assessment for fast, trustworthy, and interpretable results.",
+      image: SkinCancerImg,
+      tech: ["React", "JavaScript", "CSS", "API Integration"],
+      github: "https://github.com/Venkat4400/Skin-cancer-Detection-",
+      demo: "https://github.com/Venkat4400/Skin-cancer-Detection-"
     },
     {
       title: "Flipkart Clone",
@@ -88,23 +115,23 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="glass-card overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20"
             >
               <div className="relative overflow-hidden h-56">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, i) => (
                     <span key={i} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">

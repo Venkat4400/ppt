@@ -8,7 +8,7 @@ import fullstackCertificate from "@/assets/images/fullstack-certificate.png";
 import trainingCertificate from "@/assets/images/training-certificate.png";
 import internshipCertificate from "@/assets/images/internship-certificate.png";
 import javaCertificate from "@/assets/images/java-certificate.jpg";
-
+import infosys from "@/assets/images/infosys.png";
 
 const Certifications = () => {
   const certifications = [
@@ -74,6 +74,13 @@ const Certifications = () => {
       image: javaCertificate,
       year: "2025",
       linkedInUrl: "https://heytopper.graphy.com/verify-certificate?serialno=URCF8LUX"
+    },
+    {
+      title: "Infosys Springboard INTERNSHIP ",
+      issuer: "Infosys",
+      image: infosys,
+      year: "2025",
+      linkedInUrl: "https://verify.onwingspan.com/"
     }
   ];
 
@@ -94,7 +101,7 @@ const Certifications = () => {
               rel="noopener noreferrer"
               className="block"
             >
-              <Card 
+              <Card
                 className="glass-card overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20"
                 style={{
                   animation: `fade-up 0.8s ease-out ${index * 0.1}s forwards`,
@@ -103,14 +110,14 @@ const Certifications = () => {
               >
                 <div className="relative h-64 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                  <img 
-                    src={cert.image} 
+                  <img
+                    src={cert.image}
                     alt={cert.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 shine-effect"></div>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-2">
                     <h3 className="font-bold text-xl group-hover:text-primary transition-colors">
